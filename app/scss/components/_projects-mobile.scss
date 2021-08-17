@@ -1,0 +1,108 @@
+.aside {
+  padding: 10px 20px;
+}
+
+.aside__list {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+}
+
+.aside__list_item {
+  font-family: $font-main-header;
+  font-size: 18px;
+  color: $aside-unactive;
+  text-decoration: none;
+  text-transform: uppercase;
+
+
+  &:hover,
+  &--active {
+    color: $black;
+  }
+}
+
+.decription {
+  padding: 10px 20px;
+  font-family: $font-regular;
+  font-size: 13px;
+  color: $decription-text-color;
+
+  &__item {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+.advantages {
+  font-family: $font-bold;
+  font-size: 16px;
+  letter-spacing: 3%;
+  color: $black;
+
+  p {
+    display: flex;
+    margin: 30px 0;
+    align-items: center;
+  }
+  p::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: url('../images/projects/svg/servers.svg');
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    background-color: $blue;
+  }
+}
+
+.portfolio__card {
+  padding: 10px 20px;
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+
+  h4 {
+    font-family: $font-semibold;
+    font-size: 14px;
+    color: $black;
+    margin: 5px 0;
+  }
+
+  p {
+    font-family: $font-regular;
+    font-size: 12px;
+    color: $year-color;
+  }
+}
+
+.see-more__button {
+  display: block;
+  margin: 10px 20px;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  border: 1px solid $blue;
+
+  font-family: $font-semibold;
+  font-size: 13px;
+  letter-spacing: 3%;
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.form__canvas {
+  padding: 30px 20px;
+}
+
+.projects__footer {
+  display: none;
+}

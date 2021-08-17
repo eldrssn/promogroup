@@ -1,0 +1,70 @@
+.contacts__canvas {
+  padding: 10px 20px;
+}
+
+.contacts__header {
+  font-family: $font-bold;
+  font-size: 24px;
+  letter-spacing: 0.05em;
+  color: $black;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
+.contacts__info {
+
+  list-style-type: none;
+
+  li:nth-child(odd) {
+    font-family: $font-light;
+    font-size: 12px;
+    letter-spacing: 0.05em;
+    color: $form-caption-font-color;
+    margin-bottom: 10px;
+  }
+
+  li:nth-child(even) {
+    font-family: $font-bold;
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: $black;
+    margin-bottom: 25px;
+
+    a {
+      color: $black;
+      text-decoration: none;
+    }
+  }
+}
+
+.scheme {
+  font-family: $font-bold;
+  font-size: 13px;
+  letter-spacing: 0.03em;
+  color: $blue;
+  
+}
+
+.requisites__button {
+  margin-top: 38px;
+  display: block;
+  padding-top: 14px;
+  padding-bottom: 14px;
+  text-align: center;
+  border: 1px solid $blue;
+
+  font-family: $font-semibold;
+  font-size: 13px;
+  letter-spacing: 3%;
+  text-decoration: none;
+  color: $blue;
+
+  &:hover {
+    color: $white;
+    background-color: $blue;
+  }
+}
+
+.contacts__form {
+  margin-top: 50px;
+}

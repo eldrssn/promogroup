@@ -1,0 +1,81 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/style.min.css")
+    script(src="./js/main.bundle.js" defer) 
+    title Проекты
+  body.projects__body
+    header 
+      include components/nav.pug 
+    main.project__canvas  
+      aside.aside
+        ul.aside__list 
+          a(href="#").aside__list_item.aside__list_item--active
+            li Design
+          a(href="#").aside__list_item  
+            li Posm
+          a(href="#").aside__list_item  
+            li Merch
+          a(href="#").aside__list_item 
+            li Event
+      div
+        section.decription 
+          p.decription__item 
+            | Мы верим в важность продвижения творчества вверх по течению 
+            | и поиска способов вовлечь экспериментирование в процесс, 
+            | не испортив того, что уже работает.
+          p.decription__item 
+            | Чтобы достичь этого, мы тестируем решения по мере того, как 
+            | развиваем понимание, и используем наши глубокие знания о культуре 
+            | и поведении, чтобы убедиться, что мы твердо стоим на своих идеях, 
+            | но не слишком дорожим результатами.
+          p.decription__item  
+            | Что это значит для вас? Работа, которая отвечает вашим 
+            | бизнес – целям при этом ставя людей в центр.
+          div.advantages 
+            p 
+              | Сервер для хранения 
+              br 
+              | рабочих материалов
+            p 
+              | Клиентский доступ 
+              br
+              | в систему управления задач
+        section.portfolio 
+          article.portfolio__card
+            picture 
+              source(srcset="./images/projects/fibre-clinix-medium.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/projects/fibre-clinix-small.jpg" media="(max-width: 400px)")
+              img(srcset="./images/projects/fibre-clinix-large.jpg 2x" src="./images/projects/fibre-clinix-medium.jpg", alt="Презентбокс BC Fibre Clinix")
+            h4 Презентбокс BC Fibre Clinix
+            p 2021
+          article.portfolio__card 
+            picture 
+              source(srcset="./images/projects/indola-medium.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/projects/indola-small.jpg" media="(max-width: 400px)")
+              img(srcset="./images/projects/indola-large.jpg 2x" src="./images/projects/indola-medium.jpg", alt="Учебное пособие и рабочая тетрадь INDOLA")
+            h4 Учебное пособие и рабочая тетрадь INDOLA
+            p 2021
+          article.portfolio__card 
+            picture 
+              source(srcset="./images/projects/rosneft-medium.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/projects/rosneft-small.jpg" media="(max-width: 400px)")
+              img(srcset="./images/projects/rosneft-large.jpg 2x" src="./images/projects/rosneft-medium.jpg", alt="")
+            h4 Календарь Роснефть Битум
+            p 2021
+          article.portfolio__card 
+            picture 
+              source(srcset="./images/projects/corex-medium.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/projects/corex-small.jpg" media="(max-width: 400px)")
+              img(srcset="./images/projects/corex-large.jpg 2x" src="./images/projects/corex-medium.jpg", alt="")
+            h4 Набор сувениров Corex
+            p 2021
+          a(href="#").see-more__button Посмотреть еще 
+        
+        section.form__canvas
+          include components/form.pug
+    footer.projects__footer
+      include components/footer.pug

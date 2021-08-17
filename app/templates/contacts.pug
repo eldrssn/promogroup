@@ -1,0 +1,44 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/style.min.css")
+    script(src="./js/main.bundle.js" defer) 
+    title Контакты
+  body 
+    header  
+      include components/nav.pug 
+    
+    main.contacts__canvas 
+      section.contacts__office
+        h2.contacts__header Офис
+        ul.contacts__info
+          li Телефон
+          li 
+            a(href="tel:+78005006340") 8 800 500 6340
+          li E-mail
+          li 
+            a(href="mailto:order@promogroup.ru") order@promogroup.ru
+          li Часы работы офиса
+          li пн-пт с 9:30 до 18:30
+          li Адрес
+          li 111524, Москва, ул. Электродная, д.2, стр.34
+          li 
+            a(href="#").scheme Посмотреть схему проезда
+        a(href="#").requisites__button Скачать реквизиты компании
+      section.contacts__warehouse 
+        h2.contacts__header Склад
+        ul.contacts__info 
+          li Часы работы склада
+          li пн-пт с 9:00 до 18:00
+          li Адрес
+          li Москва, ул. Ткацкая 5, стр.4
+          li 
+            a(href="#").scheme Посмотреть схему проезда
+      section.contacts__form
+        include components/form.pug
+
+    footer.projects__footer
+      include components/footer.pug

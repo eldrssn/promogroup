@@ -1,0 +1,118 @@
+@media screen and (min-width: 1023px ) {
+
+  .main_sections__list {
+    flex-direction: row;
+    padding-top: 0;
+    padding-bottom: 25px;
+    margin: 0 80px;
+
+    a{ 
+      margin: 0 10px;
+    }
+  }
+
+  .main_sections__list a:hover{ 
+    background-image: url('../images/svg/backgrounds/hover.svg');
+  }
+
+  .main_sections__list_item {
+    flex-direction: row;
+
+    h2 {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      top: 0;
+      @include fluidFontSize(34px, 100px, 480px, 1980px, 34px);;
+      align-self: flex-end;
+      margin-bottom: 25px;
+      margin-top: 25px;
+      margin-right: -17px;
+    }
+  }
+
+  .main_sections__design_cover {
+    
+    
+    
+    .main_sections__covers {
+      height: 65%;
+      overflow: hidden;
+      align-self: flex-end;
+    }
+
+    img {
+      width: 180%;
+      object-fit: contain;
+      object-position: -25px top;
+    }
+  }
+
+  .main_sections__posm_cover  {
+    flex-direction: column;
+  
+    .main_sections__covers {
+      width: 100%;
+      height: 100%;
+    }
+
+    img {
+      object-fit: contain;
+      object-position: top right;
+    }
+  }
+
+  .main_sections__event_cover  {
+    .main_sections__covers {
+      width: 100%;
+      height: 53%;
+      align-self: flex-end;
+    }
+  }
+
+  .main_sections__merch_cover img {
+    width: calc(100% + 50px);
+    height: 100%;
+    object-fit: contain;
+    object-position: -50px 0;
+    margin-top: 0;
+  }
+
+  // Декоративные элементы
+  .main_sections__design_cover h2::after {
+      top: 125%;
+      left: 0;
+      right: 50%;
+  }
+
+  .main_sections__posm_cover h2 {
+    &::before,
+    &::after {
+      height: 33px;
+      width: 100px;
+      background-color: $blue;
+      position: absolute;
+      top: 115%;
+      left: 200%;
+    }
+  }
+  
+  .main_sections__merch_cover h2 {
+    &::before,
+    &::after {
+      height: 40px;
+      width: 150px;
+      top: 25%;
+      left: 150%;
+    }
+  
+  }
+  .main_sections__event_cover h2::before{
+    top: 120%;
+    left: 300%;
+    border: 44px solid $blue;
+    height: 59px;
+    width: 59px;
+  }
+
+}
+

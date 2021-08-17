@@ -1,0 +1,142 @@
+@media screen and (min-width: 800px ) {
+
+  .about__canvas { 
+    max-width: 1920px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .about__header {
+    font-family: $font-main-header;
+    @include fluidFontSize(22px, 90px, 480px, 1280px, 70px);
+    line-height: 80px;
+    letter-spacing: 0.03em;
+    position: relative;
+
+    &::before {
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: $blue;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-radius: 50%;
+    }
+
+    &::after {
+      display: block;
+      position: absolute;
+      top: 90%;
+      left: 70%;
+      content: '';
+      background-color: transparent;
+      border: 44px solid $blue;
+      height: 59px;
+      width: 59px;
+      border-radius: 50%;
+    }
+  }
+
+  .about__description {
+    font-size: 22px;
+    line-height: 30px;
+    letter-spacing: 0.03em;
+    position: relative;
+    
+    &::before,
+    &::after {
+      display: block;
+      height: 33px;
+      width: 100px;
+      background-color: $blue;
+      position: absolute;
+      top: 150%;
+      left: 100%;
+    }
+
+    &::before {
+      content: '';
+      transform: rotate(90deg);
+    }
+  
+    &::after {
+      content: '';
+    }
+  }
+
+  .download__button {
+    font-size: 15px;
+    width: 310px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+
+    position: relative;
+
+    &::before,
+    &::after {
+      display: block;
+      height: 40px;
+      width: 150px;
+      background-color: $blue;
+      position: absolute;
+      top: 200%;
+      left: -45%;
+    }
+  
+    &::before {
+      content: '';
+      transform: rotate(45deg);
+    }
+  
+    &::after {
+      content: '';
+      transform: rotate(-45deg);
+    } 
+  }
+
+  .points__item {
+    width: auto;
+    padding-right: 30px;
+    margin-bottom: 40px;
+
+    &:last-child {
+      padding-right: 0;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    span {
+      font-size: 80px;
+    }
+  }
+
+  .team__header {
+    @include fluidFontSize(30px, 80px, 480px, 1280px, 50px);
+    line-height: 96px;
+    position: relative;
+
+  }
+  .team__photos {
+    grid-gap: 20px;
+  }
+  .team__photo_1 {
+    grid-column: 1;
+  }
+
+  .team__photo_2 {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1023px ) {
+  .about__canvas {
+    margin: 0 80px;
+    box-sizing: border-box;
+  }
+}

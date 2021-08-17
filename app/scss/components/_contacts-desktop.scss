@@ -1,0 +1,138 @@
+@media screen and (min-width: 800px ) {
+
+  .contacts__canvas {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .contacts__office {
+    flex-basis: 25%;
+    margin-right: 50px;
+
+    &::before,
+    &::after {
+      display: block;
+      height: 33px;
+      width: 100px;
+      background-color: $blue;
+      position: absolute;
+      top: 110%;
+      left: 1%;
+    }
+
+    &::before {
+      content: '';
+      transform: rotate(90deg);
+    }
+  
+    &::after {
+      content: '';
+    }
+  }
+
+  .contacts__warehouse {
+    flex-basis: 25%;
+    margin-right: 50px;
+
+    &::before,
+    &::after {
+      display: block;
+      height: 40px;
+      width: 150px;
+      background-color: $blue;
+      position: absolute;
+      top: 90%;
+      left: 90%;
+    }
+  
+    &::before {
+      content: '';
+      transform: rotate(45deg);
+    }
+  
+    &::after {
+      content: '';
+      transform: rotate(-45deg);
+    } 
+  }
+
+  .contacts__form {
+    flex-basis: 50%;
+  }
+
+  .contacts__header {
+    font-size: 34px;
+
+    
+    &::before {
+      display: block;
+      content: '';
+      width: 15px;
+      height: 15px;
+      background-color: $blue;
+      position: absolute;
+      top: 110%;
+      right: 30%;
+      border-radius: 50%;
+    }
+  }
+
+  .contacts__info {
+
+    li:nth-child(odd) {
+      font-size: 14px;
+      letter-spacing: 0.15em;
+      margin-bottom: 15px;
+    }
+
+    li:nth-child(even) {
+      font-size: 16px;
+      margin-bottom: 40px;
+    }
+  }
+
+  .requisites__button {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 14px;
+  }
+
+  .contacts__form {
+    
+    margin-top: 30px;
+
+    .form__header {
+      font-size: 34px;
+      margin-top: 0;
+      margin-bottom: 0;
+      
+      &::after {
+        display: block;
+        position: absolute;
+        top: 20%;
+        left: 85%;
+        content: '';
+        background-color: transparent;
+        border: 44px solid $blue;
+        height: 59px;
+        width: 59px;
+        border-radius: 50%;
+        z-index: -1;
+      }
+    }
+
+    .form__caption {
+      width: 80%;
+    }
+    .form__input {
+      background-color: transparent;
+    }
+  }
+}
+
+@media screen and (min-width: 1023px ) {
+  .contacts__canvas  {
+    margin: 0 85px;
+    box-sizing: border-box;
+  }
+}

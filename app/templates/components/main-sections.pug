@@ -1,0 +1,28 @@
+//- section.main_sections 
+ul.main_sections__list 
+  a(href='projects.html')
+    li.main_sections__list_item.main_sections__design_cover 
+      div.main_sections__covers
+        picture 
+          source(srcset="./images/design-cover-90deg@2x.jpg 2x" media="(max-width: 1023px)")
+          source(srcset="./images/design-cover-90deg@1x.jpg" media="(max-width: 1023px)")
+          img(srcset="./images/design-cover@2x.jpg 2x" src="./images/design-cover@1x.jpg", alt="Design cover")
+      h2 Design
+  a(href='#')
+    li.main_sections__list_item.main_sections__posm_cover 
+      div.main_sections__covers
+        img(srcset="./images/posm-cover@2x.jpg 2x" src="./images/posm-cover@1x.jpg", alt="Posm cover")
+      h2 Posm
+  a(href='#')
+    li.main_sections__list_item.main_sections__merch_cover  
+      div.main_sections__covers
+        picture 
+          source(srcset="./images/merch-cover-90deg@2x.jpg 2x" media="(max-width: 1023px)")
+          source(srcset="./images/merch-cover-90deg@1x.jpg" media="(max-width: 1023px)")
+          img(srcset="./images/merch-cover@2x.jpg 2x" src="./images/merch-cover@1x.jpg", alt="Merch cover")
+      h2 Merch
+  a(href='#')
+    li.main_sections__list_item.main_sections__event_cover  
+      div.main_sections__covers
+        img(srcset="./images/event-cover@2x.jpg 2x" src="./images/event-cover@1x.jpg", alt="Event cover")
+      h2 Event

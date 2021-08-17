@@ -1,0 +1,56 @@
+.greetings {
+  background-image: url('../images/greetings-bg.png');
+  background-attachment: fixed;
+  background-color: $blue;
+  color: $white;
+  width: 100vw;
+  height: 100vh;
+
+  padding: 40px 20px;
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.greetings__header {
+  @include fluidFontSize(32px, 90px, 480px, 1280px, 32px);
+  font-family: $font-main-header;
+  line-height: 115%;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  
+  animation: show-element 1s cubic-bezier(.08,.79,.24,.86);
+
+  margin-top: auto;
+  margin-bottom: 11px;
+}
+
+.greetings__caption {
+  @include fluidFontSize(16px, 24px, 480px, 1280px, 24px);
+  font-family: $font-main-header;
+  font-size: 16px;
+  letter-spacing: 0.03em;
+
+  animation: show-element .5s cubic-bezier(.08,.79,.24,.86);
+  
+  margin-top: auto;
+}
+
+.hide {
+  transition: all .5s;
+  opacity: 0; 
+}
+
+@media screen and (min-width: 800px ) {
+  .greetings {
+    padding: 80px 40px;
+  }
+}
+
+@media screen and (min-width: 1023px ) {
+  .greetings {
+    padding: 110px 146px;
+  }
+}

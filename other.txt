@@ -1,0 +1,27 @@
+font-family: Codec Pro;
+font-style: normal;
+font-weight: 900;
+
+font-family: Montserrat; done 
+font-style: normal;
+font-weight: 900;
+
+font-family: Montserrat; done
+font-style: normal;
+font-weight: 800;
+
+font-family: Montserrat; done
+font-style: normal;
+font-weight: 600;
+
+font-family: Montserrat; done 
+font-style: normal;
+font-weight: 400;
+
+font-family: Montserrat;
+font-style: normal;
+font-weight: bold;
+
+font-family: Montserrat; done 
+font-style: normal;
+font-weight: 300;

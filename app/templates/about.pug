@@ -1,0 +1,98 @@
+doctype html
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="IE=edge")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    link(rel="stylesheet", href="./css/style.min.css")
+    script(src="./js/main.bundle.js" defer) 
+    title О компании
+  body
+    header  
+      include components/nav.pug 
+    
+    main.about__canvas 
+      section
+        h1.about__header 
+          | Мы работаем 
+          br 
+          | как часть вашей 
+          br
+          | команды
+        p.about__description Мы верим, что:
+          br
+          | «Искренний сервис – это когда делаешь не только то,
+          | что должен, 
+          br
+          | но еще и то, чего можешь и не делать»
+        a(href="#").download__button Скачать презентацию
+
+        div.points__canvas
+          div.points__item 
+            p 
+              span 10
+              br
+              | Лет на рынке
+          div.points__item 
+            p 
+              span +100
+              br
+              | Клиентов
+          div.points__item 
+            p 
+              span 6000
+              br
+              | Проектов
+          div.points__item 
+            p 
+              span 30
+              br
+              | Сотрудников
+          div.points__item 
+            p 
+              span 300
+                sup м2
+              br
+              | Складов
+      
+      section.team__canvas 
+        h2.team__header Команда
+        div.team__photos
+          div.team__photo.team__photo_1
+            picture
+              source(srcset="./images/about/1_office-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/1_office-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/1_office-d@2x.jpg 2x" src="./images/about/1_office-d@1x.jpg", alt="Офис")
+          div.team__photo.team__photo_2
+            picture
+              img(srcset="./images/about/2_man-d@2x.jpg 2x" src="./images/about/2_man-d@1x.jpg", alt="Мужик")
+          div.team__photo
+            picture
+              source(srcset="./images/about/3_team-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/3_team-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/3_team-d@2x.jpg 2x" src="./images/about/3_team-d@1x.jpg", alt="Команда")
+          div.team__photo.team__photo_4
+            picture
+              source(srcset="./images/about/4_team-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/4_team-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/4_team-d@2x.jpg 2x" src="./images/about/4_team-d@1x.jpg", alt="Команда")
+          div.team__photo
+            picture
+              source(srcset="./images/about/5_team-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/5_team-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/5_team-d@2x.jpg 2x" src="./images/about/5_team-d@1x.jpg", alt="Команда")
+          div.team__photo
+            picture
+              source(srcset="./images/about/6_office-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/6_office-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/6_office-d@2x.jpg 2x" src="./images/about/6_office-d@1x.jpg", alt="Офис")
+          div.team__photo.team__photo_7
+            picture
+              source(srcset="./images/about/7_office-m@2x.jpg 2x" media="(max-width: 400px)")
+              source(srcset="./images/about/7_office-m@1x.jpg" media="(max-width: 400px)")
+              img(srcset="./images/about/7_office-d@2x.jpg 2x" src="./images/about/7_office-d@1x.jpg", alt="Офис")
+
+      include components/form.pug
+
+    footer.projects__footer
+      include components/footer.pug

@@ -1,0 +1,138 @@
+// временно для избежания неверной отрисовки
+@media screen and (max-width: 800px) {
+  .nav--open_burger {
+    background-color: $blue;
+    background-image: url('../images/greetings-bg.png');
+    background-size: cover;
+    height: 100vh;
+    box-sizing: border-box;
+
+    .nav__wrap {  
+      display: flex;
+      flex-wrap: wrap;
+      align-items: flex-start;
+      height: 100%;
+
+      .nav__header {
+        color: $white;
+        width: 50%;
+      }
+
+      .burger_menu__button {
+        width: 50%;
+      }
+  
+      .burger_menu__lines {
+        background-color: transparent;
+    
+        &::before {
+          top: 1px;
+          transform: rotate(45deg);
+          background-color: $white;
+          width: 18px;
+        }
+    
+        &::after {
+          top: -1px;
+          transform: rotate(-45deg);
+          background-color: $white;
+          width: 18px;
+        }
+      }
+
+      .nav__list {
+        flex-grow: 1;
+        list-style: none;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;  
+
+        align-self: center;
+        
+        a {
+          text-decoration: none;
+          font-family: $font-semibold;
+          color: $popup-nav-items-color;    
+          font-size: 24px;
+          letter-spacing: 0.05em;
+
+          &:hover {
+            color: $black;
+          }
+        }
+
+        li {
+          margin-top: 20px;
+          margin-bottom: 20px;
+        }
+      
+        li:first-child {
+          margin-top: 0;
+        }
+      
+        li:last-child {
+          margin-bottom: 0;
+        }
+      }
+
+    }
+
+    .burger_menu {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      width: 100%;
+    }
+
+    .nav_canvas {
+      flex-grow: 1;
+    
+      display: flex;
+      justify-content: center;
+    }
+
+    //секция футора навигации в попапе
+    .nav__footer {
+      display: block;
+    }
+    .footer {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    .footer__contacts {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      padding-bottom: 45px;
+      font-family: $font-regular;
+      
+      li {
+        list-style-type: none;
+      }
+      
+      a {
+        color: $almout-white;
+        font-size: 13px;
+        text-decoration: none;
+        letter-spacing: 5%;
+      }
+    }
+    
+    .footer__phone {
+      color: $almout-white;
+      font-size: 18px;
+      font-family: $font-semibold;
+      text-decoration: none;
+    }
+    
+    .footer__copyright {
+      font-family: $font-semibold;
+      color: $purple;
+      font-size: 12px;
+      padding-top: 15px;
+      padding-bottom: 60px;
+    }
+  }
+}

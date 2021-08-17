@@ -1,0 +1,20 @@
+section.nav
+  div.nav__wrap  
+
+    h2.nav__header
+      a(href="/") Promogroup
+
+    a.burger_menu__button(href='#') Открыть меню
+      div.burger_menu__lines
+
+    div.burger_menu
+      nav.nav_canvas
+        ul.nav__list
+          li 
+            a.nav__list_item(href='projects.html') Проекты
+          li 
+            a.nav__list_item(href='about.html') О компании
+          li 
+            a.nav__list_item(href='contacts.html') Контакты
+      section.nav__footer
+        include footer.pug

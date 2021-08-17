@@ -1,0 +1,110 @@
+@media screen and (min-width: 800px ) {
+
+  .projects__footer {
+    display: block;
+  }
+
+  .projects__body { 
+    max-width: 1920px;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .project__canvas {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+
+  .aside {
+    margin-right: 50px;
+  }
+  
+  .aside__list {
+    padding: 10px 0;
+  }
+
+  .aside__list_item {
+    @include fluidFontSize(18px, 70px, 480px, 1280px, 50px);
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+
+    &:first-child {
+      margin-top: 0;
+    }
+    &:hover,
+    &--active {
+      color: $blue;
+    }
+  }
+
+  .aside__list {
+    flex-direction: column;
+    
+  }
+
+  .decription {
+    
+    &__item {
+      font-family: $font-light;
+      font-size: 18px;
+      width: 80%;
+    }
+  }
+
+  .advantages {
+    display: flex;
+    flex-wrap: wrap;
+    p {
+      margin-right: 50px;
+      line-height: 24px;
+    }
+
+    p::before {
+      margin-right: 25px;
+      width: 55px;
+      height: 55px;
+    }
+  }
+
+  .portfolio {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .portfolio__card {
+    width: 50%;
+    box-sizing: border-box;
+    padding: 25px 10px;
+
+    img {
+      min-height: 400px;
+      width: 100%;
+      object-fit: cover;
+      object-position: center;
+    }
+
+    h4 {
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+  }
+
+  .see-more__button {
+    font-size: 15px;
+    width: 270px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: auto;
+  }
+}
+
+@media screen and (min-width: 1023px ) {
+  .project__canvas {
+    margin: 0 80px;
+  }
+}

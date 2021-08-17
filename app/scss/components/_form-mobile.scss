@@ -1,0 +1,62 @@
+.form__header {
+  font-family: $font-bold;
+  font-size: 18px;
+  letter-spacing: 5%;
+  color: $black;
+}
+
+.form__input {
+  border: none;
+  display: block;
+  border-bottom: 1px solid $form-unactive-border-color;
+  color: $black;
+  width: 100%;
+  font-family: $font-regular;
+  padding: 10px 20px;
+  margin: 15px 0;
+  box-sizing: border-box;
+  letter-spacing: 0.05em;
+  font-size: 13px;
+  
+  &::placeholder {
+    color: $form-unactive-font-color;
+    
+  }
+}
+
+.form__caption {
+  font-family: $font-light;
+  font-size: 11px;
+  letter-spacing: 0.05em;
+  color: $form-caption-font-color;
+  line-height: 160%;
+  margin-bottom: 20px;
+
+  span {
+    font-family: $font-main-header;
+    color: $blue;
+  }
+}
+
+.form__button {
+  font-family: $font-bold;
+  font-size: 13px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  text-align: center;
+
+  cursor: pointer;
+  display: block;
+  width: 100%;
+  color: $white;
+  background-color: $blue;
+  border: none;
+  padding-top: 15px;
+  padding-bottom: 15px;
+
+  &:hover {
+    border: 1px solid $blue;
+    background-color: $white;
+    color: $blue;
+  }
+}
