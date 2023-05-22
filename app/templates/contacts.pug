@@ -6,37 +6,37 @@ html(lang="en")
     meta(name="viewport", content="width=device-width, initial-scale=1.0")
     link(rel="stylesheet", href="./css/style.min.css")
     script(src="./js/main.bundle.js" defer) 
-    title Контакты
+    title Contacts
   body 
     header  
       include components/nav.pug 
     
     main.contacts__canvas 
       section.contacts__office
-        h2.contacts__header Офис
+        h2.contacts__header Office
         ul.contacts__info
-          li Телефон
+          li Phone
           li 
             a(href="tel:+78005006340") 8 800 500 6340
           li E-mail
           li 
             a(href="mailto:order@promogroup.ru") order@promogroup.ru
-          li Часы работы офиса
-          li пн-пт с 9:30 до 18:30
-          li Адрес
-          li 111524, Москва, ул. Электродная, д.2, стр.34
+          li Office hours
+          li Mon-Fri from 9:30 AM to 6:30 PM
+          li Address
+          li 111524, Moscow, Electrodnaia Street, Building 2, Unit 34
           li 
-            a(href="#").scheme Посмотреть схему проезда
-        a(href="#").requisites__button Скачать реквизиты компании
+            a(href="#").scheme View driving directions
+        a(href="#").requisites__button Download company requisites
       section.contacts__warehouse 
-        h2.contacts__header Склад
+        h2.contacts__header Warehouse
         ul.contacts__info 
-          li Часы работы склада
-          li пн-пт с 9:00 до 18:00
-          li Адрес
-          li Москва, ул. Ткацкая 5, стр.4
+          li Warehouse hours
+          li Mon-Fri from 9:00 AM to 6:00 PM
+          li Address
+          li Moscow, Tkatskaia Street, Building 5, Unit 4
           li 
-            a(href="#").scheme Посмотреть схему проезда
+            a(href="#").scheme View driving directions
       section.contacts__form
         include components/form.pug
 

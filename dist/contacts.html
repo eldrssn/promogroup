@@ -1,33 +1,46 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/style.min.css">
-    <script src="./js/main.bundle.js" defer> </script>
-    <title>Контакты</title>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <script src="./js/main.bundle.js" defer></script>
+    <title>Contacts</title>
   </head>
-  <body> 
-    <header> 
+  <body>
+    <header>
       <section class="nav">
-        <div class="nav__wrap"> 
-          <h2 class="nav__header"><a href="index.html">Promogroup</a></h2><a class="burger_menu__button" href="#">Открыть меню
-            <div class="burger_menu__lines"></div></a>
+        <div class="nav__wrap">
+          <h2 class="nav__header"><a href="index.html">Promogroup</a></h2>
+          <a class="burger_menu__button" href="#"
+            >Open menu
+            <div class="burger_menu__lines"></div
+          ></a>
           <div class="burger_menu">
             <nav class="nav_canvas">
               <ul class="nav__list">
-                <li> <a class="nav__list_item" href="projects.html">Проекты</a></li>
-                <li> <a class="nav__list_item" href="about.html">О компании</a></li>
-                <li> <a class="nav__list_item" href="contacts.html">Контакты</a></li>
+                <li>
+                  <a class="nav__list_item" href="projects.html">Projects</a>
+                </li>
+                <li>
+                  <a class="nav__list_item" href="about.html">About</a>
+                </li>
+                <li>
+                  <a class="nav__list_item" href="contacts.html">Contacts</a>
+                </li>
               </ul>
             </nav>
             <section class="nav__footer">
-              <section class="footer"> 
-                <ul class="footer__contacts"> <a href="#">
-                    <li>Behance</li></a><a href="#">
-                    <li>Instagram</li></a><a href="#">
-                    <li>Facebook</li></a></ul><a class="footer__phone" href="tel:+78005006340">8 800 500 63 40 </a>
+              <section class="footer">
+                <ul class="footer__contacts">
+                  <a href="#"> <li>Behance</li></a
+                  ><a href="#"> <li>Instagram</li></a
+                  ><a href="#"> <li>Facebook</li></a>
+                </ul>
+                <a class="footer__phone" href="tel:+78005006340"
+                  >8 800 500 63 40
+                </a>
                 <p class="footer__copyright">©promogroup 2008-2021</p>
               </section>
             </section>
@@ -35,49 +48,76 @@
         </div>
       </section>
     </header>
-    <main class="contacts__canvas"> 
+    <main class="contacts__canvas">
       <section class="contacts__office">
-        <h2 class="contacts__header">Офис</h2>
+        <h2 class="contacts__header">Office</h2>
         <ul class="contacts__info">
-          <li>Телефон</li>
-          <li> <a href="tel:+78005006340">8 800 500 6340</a></li>
-          <li>E-mail</li>
-          <li> <a href="mailto:order@promogroup.ru">order@promogroup.ru</a></li>
-          <li>Часы работы офиса</li>
-          <li>пн-пт с 9:30 до 18:30</li>
-          <li>Адрес</li>
-          <li>111524, Москва, ул. Электродная, д.2, стр.34</li>
-          <li> <a class="scheme" href="#">Посмотреть схему проезда</a></li>
-        </ul><a class="requisites__button" href="#">Скачать реквизиты компании</a>
+          <li>Phone</li>
+          <li><a href="tel:+78005006340">8 800 500 6340</a></li>
+          <li>Email</li>
+          <li><a href="mailto:order@promogroup.ru">order@promogroup.ru</a></li>
+          <li>Office Hours</li>
+          <li>Mon-Fri 9:30 AM - 6:30 PM</li>
+          <li>Address</li>
+          <li>111524, Moscow, Electrodnaya Street, Building 2, Structure 34</li>
+          <li><a class="scheme" href="#">View driving directions</a></li>
+        </ul>
+        <a class="requisites__button" href="#">Download company details</a>
       </section>
-      <section class="contacts__warehouse"> 
-        <h2 class="contacts__header">Склад</h2>
-        <ul class="contacts__info"> 
-          <li>Часы работы склада</li>
-          <li>пн-пт с 9:00 до 18:00</li>
-          <li>Адрес</li>
-          <li>Москва, ул. Ткацкая 5, стр.4</li>
-          <li> <a class="scheme" href="#">Посмотреть схему проезда</a></li>
+      <section class="contacts__warehouse">
+        <h2 class="contacts__header">Warehouse</h2>
+        <ul class="contacts__info">
+          <li>Warehouse Hours</li>
+          <li>Mon-Fri 9:00 AM - 6:00 PM</li>
+          <li>Address</li>
+          <li>Moscow, Tkatskaya Street 5, Building 4</li>
+          <li><a class="scheme" href="#">View driving directions</a></li>
         </ul>
       </section>
       <section class="contacts__form">
-        <h3 class="form__header">Сделать будущее<br>бренда — успешным</h3>
+        <h3 class="form__header">Make the future of your brand successful</h3>
         <form action="" method="POST">
-          <input class="form__input" type="text" name="name" placeholder="Имя">
-          <input class="form__input" type="email" name="email" placeholder="E-mail">
-          <input class="form__input" type="tel" name="tel" placeholder="Телефон">
-          <input class="form__input" type="text" name="decription" placeholder="Расскажите о своем проекте">
-          <p class="form__caption">Заполняя форму, вы соглашаетесь на <span>обработку персональных данных </span>(ст.9 ФЗ от 27.07.2006 №152-ФЗ «О персональных данных»)</p>
-          <button class="form__button" type="sumbit">Отправить запрос</button>
+          <input
+            class="form__input"
+            type="text"
+            name="name"
+            placeholder="Name"
+          />
+          <input
+            class="form__input"
+            type="email"
+            name="email"
+            placeholder="Email"
+          />
+          <input
+            class="form__input"
+            type="tel"
+            name="tel"
+            placeholder="Phone"
+          />
+          <input
+            class="form__input"
+            type="text"
+            name="decription"
+            placeholder="Tell us about your project"
+          />
+          <p class="form__caption">
+            By filling out the form, you agree to the
+            <span>processing of personal data</span> (Art. 9 of the Federal Law
+            of 27.07.2006 No. 152-FZ "On Personal Data")
+          </p>
+          <button class="form__button" type="submit">Send Request</button>
         </form>
       </section>
     </main>
     <footer class="projects__footer">
-      <section class="footer"> 
-        <ul class="footer__contacts"> <a href="#">
-            <li>Behance</li></a><a href="#">
-            <li>Instagram</li></a><a href="#">
-            <li>Facebook</li></a></ul><a class="footer__phone" href="tel:+78005006340">8 800 500 63 40 </a>
+      <section class="footer">
+        <ul class="footer__contacts">
+          <a href="#"> <li>Behance</li></a
+          ><a href="#"> <li>Instagram</li></a
+          ><a href="#"> <li>Facebook</li></a>
+        </ul>
+        <a class="footer__phone" href="tel:+78005006340">8 800 500 63 40 </a>
         <p class="footer__copyright">©promogroup 2008-2021</p>
       </section>
     </footer>
